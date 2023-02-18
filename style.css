@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    list-style: none;
+}
+.nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(192, 187, 190);
+}
+
+span {
+    font-size: 1.5rem;
+    padding-left:10%;
+    line-height: 60px;
+}
+
+.nav ul {
+    float: right;
+    padding-right:10%;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 50px;
+}
+
+.nav ul li a {
+    font-size: 1.2rem;
+    color: black;
+    padding: 15px 10px;
+}
+.nav ul li a:hover{
+    background-color: black;
+    color: aliceblue;
+}
+.Menu i{
+    display: none;
+}
+
+/**/
+  
+  .slider{
+    position: relative;
+  }
+.slider img{
+  width: 100%;
+}
+.pos{
+    position: absolute;
+    right:10%;
+    top:50%;
+    background-color: rgb(10, 10, 10 , 0.5);
+    color: rgb(238, 235, 235);
+}
+  .slider-item,
+  .hidden
+  {
+  display: none;
+  }
+  
+  .active{
+    display: block;
+  }
+  .slider-btns{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+  }
+  .slider-btns button{
+    font-size: 30px;
+    font-weight: 400;
+    background-color:rgba(0,0,0,0.5);
+    border:none;
+    color:white;
+    cursor: pointer;
+  }
+  .course .img-row ,.about .aboutrow{
+    display: flex;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    padding-bottom: 3rem; 
+  }
+
+  .course .img-row .imgcol-1{
+    flex: 1 1 30rem;
+  }
+  .course .img-row .imgcol-1 img , .course .img-row .imgcol-2 img{
+    object-fit: cover;
+    cursor: pointer;
+    margin-top: 2%;
+    padding-left:.5rem;
+  }
+  .course .img-row .imgcol-2 , .about .aboutrow .about-col2{
+    flex: 1 1 30rem;
+    align-items: center;
+  }
+ 
+  .about .aboutrow .about-col1{
+    flex: 1 1 30rem;
+    padding-left: 5rem;
+  }
+  .about-col1 .box{
+    margin-top: 2%;
+    width: 70%;
+    height: 45vh;
+    border: 2px solid black;
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+.text{
+  margin-top: 2%;
+    text-align: center;
+}
+
+#but {
+  background-color: rgb(14, 14, 14);
+  color: rgb(126, 126, 126);
+  width: 60px;border: none;
+  height: 60px;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}
+#but:hover{
+transform: scale(1.1);
+transition: 0.2s ease-in-out;
+}
+#blog .rowblog , .map{
+  display: flex;
+  flex-wrap: wrap;
+}
+#blog .rowblog .col-1 , #blog .rowblog .col-2 , .map .map-col1 , .map .map-col2{
+  flex: 1 1 40rem;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+}
+.footer{
+  background-color: #252525;
+}
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.footer .box-container .box{
+  flex:1 1 20rem;
+}
+.footer .box-container .box .p{
+  color:#f7f5f5;
+  padding-top: 8rem;
+}
+.footer .box-container .box h3{
+  color:#f7f5f5;
+  font-size: 2rem;
+  padding:1rem 0;
+}
+
+.footer .box-container .box a{
+  font-size: 1rem;
+  padding:.8rem 0;
+  display: block;
+  color:#f5f3f3;
+}
+.footer .credit{
+  padding: 2rem;
+  background-color: rgb(181, 181, 180);
+  text-align: center;color: #f4f3f3;
+}
+@media (max-width:768px) {
+.nav ul {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(163, 164, 171);
+        text-align: center;
+        padding: 0;
+        top: 50px;
+        opacity: 0;
+}
+
+.nav ul.slide {
+    opacity: 1;
+    height: 48vh;
+        transition: 2s;
+}
+
+.nav ul li {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .nav ul .icon{
+        display: none;
+    } 
+
+
+    .nav ul li a {
+        border: none;
+        color: rgb(8, 8, 8);
+    }
+    
+.Menu {
+    float: right;
+    padding-right: 20px;
+    padding-top: 12px;
+}
+
+.Menu i {
+    font-size: 1.2rem;
+    color: rgb(14, 14, 13);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.pos{
+    display: none;
+}
+.about .aboutrow .about-col1{
+  flex: 1 1 30rem;
+  padding-left:1rem;
+}
+#but {
+  background-color: rgb(14, 14, 14);
+  color: rgb(126, 126, 126);
+  width: 60px;border: none;
+  height: 60px;
+  font-size: 1rem;
+  margin-bottom: 2%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(30% - 47px);
+}
+.rowblog .col-1 h2{
+  font-size: 12px;
+  margin-bottom: 2%;
+}
+}

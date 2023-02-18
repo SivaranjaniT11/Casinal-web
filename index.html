@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>casinal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <nav class="nav">
+    <span><img src="image/logo.png" alt=""></span>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#course">Services</a></li>
+      <li><a href="#blog">Blogs</a></li>
+      <li><a href="#footer">Contact US</a></li>
+      <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+      <li class="icon"><i class="fa-brands fa-facebook-f"></i></li>
+      <li class="icon"><i class="fa-brands fa-instagram"></i></li>
+      <li class="icon"><i class="fa-brands fa-linkedin-in"></i></li>
+      <li class="icon"><i class="fa-solid fa-magnifying-glass"></i></li>
+
+    </ul>
+    <div class="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+  <!--end-->
+  <div class="slider" id="home">
+    <div class="slider-item active" style="position: relative;">
+      <img src="image/car1.png" alt="Slider-1">
+      <div class="pos">
+        <h1>Casinal Educations Coachings</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, quis?</p>
+      </div>
+    </div>
+    <div class="slider-item" style="position: relative;">
+      <img src="image/car2.png" alt="Slider-2">
+      <div class="pos">
+        <h1>Casinal Educations Coachings</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, quis?</p>
+      </div>
+    </div>
+    <div class="slider-item" style="position: relative;">
+      <img src="image/car3.png" alt="Slider-2">
+      <div class="pos">
+        <h1>Casinal Educations Coachings</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, quis?</p>
+      </div>
+    </div>
+    <div class="slider-btns">
+      <button id="btn-prev" onclick="PrevSlide()">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="btn-next" onclick="NextSlide()">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+  <!--Start-->
+
+  <div class="course" id="course">
+    <br>
+    <div class="text">
+      <h1>Our Courses</h1>
+    </div>
+    <div class="img-row">
+      <div class="imgcol-1">
+        <img id="image1" onmouseover="over()" onmouseout="myover()" src="image/img-2.png" alt="" width="98%">
+        <img id="image2" onmouseover="enter()" onmouseout="myenter()" src="image/img-4.png" alt="" width="98%">
+      </div>
+      <div class="imgcol-2">
+        <img id="image3" onmouseover="like()" onmouseout="mylink()" src="image/img-3.png" alt="" width="98%">
+        <img id="image4" onmouseover="fun()" onmouseout="myfun()" src="image/img-5.png" alt="" width="98%">
+      </div>
+    </div>
+
+  </div>
+  <div class="about" id="about">
+    <br>
+    <div class="text">
+      <h1>Our About</h1>
+      <p>Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    </div>
+    <div class="aboutrow">
+      <div class="about-col1">
+        <div class="box">
+          <br>
+          <p style="color: gray; margin-top: 10%;">01 Jan 2020</p>
+          <h4 style="margin-top: 1%;"><b>Make it Simple</b></h4>
+          <p style="color: rgb(92, 92, 92); margin-top: 2%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation</p>
+          <p style="color: gray; margin-top: 4%;">Post By : Casinal</p>
+        </div>
+      </div>
+      <div class="about-col2">
+        <img src="image/img-6.png" alt="" width="100%">
+      </div>
+    </div>
+  </div>
+  <div id="blog">
+    <div class="text">
+      <h1>Our Bolg</h1>
+      <p>do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    </div>
+    <br>
+    <div class="rowblog">
+      <div class="col-1" style=" position: relative; padding-left: 1%;">
+        <button id="but" onclick="myfunction()" type="button"><i class="fa-solid fa-play"></i></button>
+
+        <video id="myVideo" width="100%">
+          <source src="image/about.mp4" type="video/mp4" >
+        </video>
+        <h2 style="text-align: center;">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, repellat.</h2>
+      </div>
+      <div class="col-2">
+        <img src="image/img-7.png" alt="" width="90%">
+      </div>
+    </div>
+  </div>
+<br>
+  <div id="container" style="text-align: center;">
+    <h1>Get Your free consuting</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor dolorum fugiat eos officia voluptatem soluta quasi rerum reprehenderit ullam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sint? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis totam eum tempora adipisci placeat qui aliquid cum est velit modi.</p>
+  </div>
+  <br>
+  <div class="map">
+    <div class="map-col1">
+      <img src="image/img-8.png" alt="" width="100%">
+    </div>
+    <div class="map-col2">
+      <img src="image/map-img.png" alt="" width="100%">
+    </div>
+  </div>
+  <br>
+  <footer id="footer">
+    <section class="footer">
+
+        <div class="box-container">
+  <div class="box">
+    <div class="p">
+               <p><i class="fa-solid fa-phone"></i> Call Now +01 9876543210</p>
+               <br>
+                <p><i class="fa-solid fa-envelope"></i> imagemail@domain.com</p>
+            </div>
+          </div>
+            <div class="box" id="contact">
+                <h3>Informtion</h3>
+                <a href="#">There are many</a>
+                <a href="#">variations of</a>
+                <a href="#">passages of Lorem</a>
+                <a href="#">Ipsum available, but</a>
+                <a href="#">the majority have</a>
+                <a href="#">suffered alteration</a>
+            </div>
+            <div class="box">
+                <h3>Helpful links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+                <a href="#">News</a>
+            </div>
+            <div class="box">
+             <div class="p"><img src="image/footer-logo.png" alt=""></div> 
+            </div>
+        </div>
+    <br>
+        <div class="credit"> created by <b>T sivaranjani</b> | all rights reserved </div>
+    
+    </section>
+</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
